@@ -1,0 +1,36 @@
+// @mixin line-clamp($num: 2) {
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+//   -webkit-line-clamp: $num;
+// }
+
+@mixin width-320 {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin width-450 {
+  @media screen and (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin width-600 {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin width-823 {
+  @media screen and (max-width: 823px) {
+    @content;
+  }
+}
+
+@mixin width-1000 {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}

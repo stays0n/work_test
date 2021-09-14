@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛОГО | Тестовое ЛОГО</title>
+
+  <meta name="description" content="Описание">
+  <meta name="keywords" content="Ключевики">
+  <meta name="image" content="./images/logo.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Название">
+  <meta property="og:description" content="Описание">
+  <meta property="og:image" content="./images/logo.svg">
+  <meta property="og:url" content="https://example.com">
+
+  <link rel="canonical" href="https://example.com">
+
+  <link rel="preconnect" href=""> <!-- доп ресурсы типа шрифтов, cdn, аналитика -->
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+
+  <script defer src="js/main.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <button class="header__burger" type="button">
+          <span></span>
+          <span class="sr-only">Меню</span>
+        </button>
+
+        <a class="header__logo logo" href="#">
+          <img class="logo__image" src="./images/logo.svg" alt="логотип">
+        </a>
+
+        <div class="header__inner">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="#banner">
+                Пункт 1
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#points">
+                Пункт 2
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#steps">
+                Пункт 3
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#reviews">
+                Пункт 4
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__links">
+          <a class="header__phone" href="tel:88005553535">8 800 555 35 35</a>
+          <a class="header__user" href="#">
+            <svg>
+              <use xlink:href="./images/icons/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="banner" id="banner">
+      <div class="container">
+        <div class="banner__wrapper">
+          <div class="banner__text">
+            <h1 class="banner__title">
+              Большой главный заголовок
+            </h1>
+
+            <p>
+              Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания.
+            </p>
+          </div>
+
+          <form class="banner__form form">
+            <div class="form__region">
+              <label class="form__label form__label--is_focused" for="region">Регион</label>
+              <input class="form__input" type="text" id="region">
+            </div>
+            <div class="form__box">
+              <div class="form__choise">
+                <span>Выбор:</span>
+                <div class="form__checkboxes">
+                  <div class="form__item">
+                    <input class="form__checkmark sr-only" type="checkbox" id="choise_1">
+                    <label class="form__label" for="choise_1">Выбор 1</label>
+                  </div>
+                  <div class="form__item">
+                    <input class="form__checkmark sr-only" type="checkbox" id="choise_2">
+                    <label class="form__label" for="choise_2">Выбор 2</label>
+                  </div>
+                  <div class="form__item">
+                    <input class="form__checkflag sr-only" type="checkbox" id="choise_3">
+                    <label class="form__label" for="choise_3">Выбор 3</label>
+                  </div>
+                </div>
+              </div>
+              <button class="form__button button" type="submit">Поиск</button>
+            </div>
+          </form>
+
+          <div class="banner__wrap">
+            <img class="banner__image" src="./images/banner/banner_img_1.jpg" alt="Галочка">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="points" id="points">
+      <div class="container container--sm">
+        <div class="points__wrapper">
+          <h2 class="points__title title title--white">
+            Заголовок
+          </h2>
+
+          <div class="points__inner">
+            <div class="points__bg" style="background-image: url(./images/points/points_img_1.svg)">
+
+            </div>
+            <div class="points__text">
+              <h3 class="points__heading heading">
+                Пункты
+              </h3>
+              <ul class="points__list">
+                <li class="points__item">Пункт 1</li>
+                <li class="points__item">Пункт 2</li>
+                <li class="points__item">Пункт 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="steps">
+      <div class="container">
+        <h2 class="steps__title title title--dark">
+          Заголовок
+        </h2>
+
+        <ul class="steps__items">
+          <li class="steps__item">
+            <div class="steps__top">
+              <div class="steps__icon steps__icon--mapmarker"></div>
+              <div class="steps__wrap">
+                <h3 class="steps__heading heading">
+                  1. шаг
+                </h3>
+              </div>
+
+            </div>
+            <div class="steps__bottom">
+              <p>
+                Разнообразный и богатый опыт начало повседневной работы по формированию.
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__item">
+            <div class="steps__top">
+              <div class="steps__icon steps__icon--keyboard"></div>
+              <div class="steps__wrap">
+                <h3 class="steps__heading heading">
+                  2. шаг
+                </h3>
+              </div>
+
+            </div>
+            <div class="steps__bottom">
+              <p>
+                Разнообразный и богатый опыт начало повседневной работы по формированию.
+              </p>
+            </div>
+          </li>
+
+          <li class="steps__item">
+            <div class="steps__top">
+              <div class="steps__icon steps__icon--checkmark"></div>
+              <div class="steps__wrap">
+                <h3 class="steps__heading heading">
+                  3. шаг
+                </h3>
+              </div>
+
+            </div>
+            <div class="steps__bottom">
+              <p>
+                Разнообразный и богатый опыт начало повседневной работы по формированию.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <p>
+          Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. С другой стороны реализация намеченных плановых заданий играет важную роль в формировании систем массового участия. С другой стороны консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.
+        </p>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container container--lg">
+        <h2 class="reviews__title title title--dark">
+          Отзывы клиентов
+        </h2>
+
+        <ul class="reviews__slider">
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_1.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Просто дали начать снова жить!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться от долгов можно так легко. Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который посоветовала знакомая. Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни. Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и нервотрепки.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Марина Иванова</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_2.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Всем советую!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время, я брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально. Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за банкротством, и затем был приятно удивлен, что мне быстро помогли с долгами.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Сергей Иванов</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_3.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Проверенная фирма.
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как камень с плеч!
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Иван Иванов</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_1.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Просто дали начать снова жить!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться от долгов можно так легко. Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который посоветовала знакомая. Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни. Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и нервотрепки.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Марина Иванова</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_2.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Всем советую!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время, я брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально. Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за банкротством, и затем был приятно удивлен, что мне быстро помогли с долгами.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Сергей Иванов</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_3.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Проверенная фирма.
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как камень с плеч!
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Иван Иванов</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_1.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Просто дали начать снова жить!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Мне порекомендовала обратиться в компанию коллега еще год назад. Сначала даже не поверила, что избавиться от долгов можно так легко. Решила даже позвонить в другие конторы, однако самым выгодным и адекватным вариантом стал тот, который посоветовала знакомая. Меня порадовала, что компания сама собирает пакет документов, оформляет все за считанные дни. Фирма быстро избавила меня от долгов, и я смогла спокойно жить, работать без звонков коллекторов и нервотрепки.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Марина Иванова</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_2.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Всем советую!
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Спасибо большое компании по списанию долгов. Процедура прошла законно, прозрачно, легально. В свое время, я брал кредит на собственное дело, но бизнес не пошел и не поехал, а вот долги стали копиться моментально. Естественно, что коллекторы и проблемы не заставили себя ждать. Поэтому и решил обратиться за банкротством, и затем был приятно удивлен, что мне быстро помогли с долгами.
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Сергей Иванов</cite>
+          </li>
+
+          <li class="reviews__slide">
+            <div class="reviews__top">
+              <img class="reviews__photo" src="./images/reviews/reviews_img_3.jpg" alt="Аватар пользователя">
+              <div class="reviews__wrap">
+                <h3 class="reviews__heading heading">
+                  Проверенная фирма.
+                </h3>
+              </div>
+
+            </div>
+            <blockquote class="reviews__blockquote">
+              <p>
+                Отвечаю за то, что говорю. Я сам успешно списал долги, а затем посоветовал знакомым, попавшим в тяжелую жизненную ситуацию, тоже обратиться в эту же компанию. Помогли и мне, и моим друзьям. Естественно, как камень с плеч!
+              </p>
+            </blockquote>
+            <cite class="reviews__author">Иван Иванов</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="sr-only">
+      Дополнительная информация
+    </h2>
+
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <address class="footer__address">
+            <a class="footer__email" href="mailto:mail@mail.com">mail@mail.com</a>
+            <a class="footer__phone" href="tel:88005553535">
+              <svg>
+                <use xlink:href="./images/icons/sprite.svg#telephone"></use>
+              </svg>
+              <span>8 800 555 35 35</span>
+            </a>
+          </address>
+
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="./images/icons/sprite.svg#instagram"></use>
+                </svg>
+                <span class="sr-only">Мы в Инстаграмм</span>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="./images/icons/sprite.svg#vkontakte"></use>
+                </svg>
+                <span class="sr-only">Мы во Вконтакте</span>
+              </a>
+            </li>
+
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg>
+                  <use xlink:href="./images/icons/sprite.svg#facebook"></use>
+                </svg>
+                <span class="sr-only">Мы на Фэйсбук</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list">
+          <h3 class="footer__heading">
+            Услуги
+          </h3>
+
+          <ul class="footer__items">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 1
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 2
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 3
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list">
+          <h3 class="footer__heading">
+            Другое
+          </h3>
+
+          <ul class="footer__items">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 1
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 2
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                услуга 3
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__wrap ">
+          <a class="footer__logo logo" href="#">
+            <img class="logo__image" src="./images/logo.svg" alt="логотип">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__copy">
+        <p>
+          © 2021
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
