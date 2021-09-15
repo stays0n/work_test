@@ -1,6 +1,9 @@
 $(function () {
+  const headerNav = $('.header__nav');
+  const reviewsSlider = $('.reviews__slider');
+
   const toggleBurgerMenu = () => {
-    $('.header__nav').toggleClass('is_active');
+    headerNav.toggleClass('is_active');
   };
 
   const toggleWindowScroll = () => {
@@ -18,15 +21,15 @@ $(function () {
     }
   });
 
-  $('.header__nav').on('click', (event) => {
+  headerNav.on('click', (event) => {
     if (innerWidth <= 600 && event.target.closest('.header__menu')) {
       toggleBurgerMenu();
       toggleWindowScroll();
     }
   });
 
-  if ('.reviews__slider') {
-    $('.reviews__slider').slick({
+  if (reviewsSlider) {
+    reviewsSlider.slick({
       dots: false,
       arrows: false,
       infinite: false,
